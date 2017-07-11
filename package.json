@@ -2,8 +2,10 @@
   "name": "strophejs-plugin-pubsub",
   "version": "0.0.2",
   "description": "A strophe.js plugin that partially implements XEP-0060.",
-  "main": "strophe.pubsub.js",
+  "main": "lib/strophe.pubsub.js",
   "scripts": {
+    "build": "rollup src/strophe.pubsub.js -f umd -g strophe.js:window -o lib/strophe.pubsub.js -m",
+    "prepublish": "npm run --silent build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -22,7 +24,10 @@
     "url": "https://github.com/strophe/strophejs-plugin-pubsub/issues"
   },
   "homepage": "https://github.com/strophe/strophejs-plugin-pubsub",
-  "dependencies": {
+  "devDependencies": {
+    "rollup": "^0.45.0"
+  },
+  "peerDependencies": {
     "strophe.js": "^1.2.12"
   }
 }

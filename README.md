@@ -1,3 +1,8 @@
-# XEP-0060: Publish-Subscribe
+# strophe.disco.js
 
-This plugin partially implements [XEP-0060](http://xmpp.org/extensions/xep-0060.html).
+Plugin for [strophe.js](https://www.npmjs.com/package/strophe.js) to provide Publish-Subscribe
+([XEP-0060](http://xmpp.org/extensions/xep-0060.html)).
+
+## Install
+
+    npm install strophejs-plugin-pubsub

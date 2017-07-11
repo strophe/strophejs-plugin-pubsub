@@ -15,32 +15,7 @@
  *
  *  Strophe.Builder.prototype methods should probably move to strophe.js
  */
-(function (root, factory) {
-    if (typeof define === 'function' && define.amd) {
-        // AMD. Register as an anonymous module.
-        define([
-            "strophe.js"
-        ], function (Strophe) {
-            factory(
-                Strophe.Strophe,
-                Strophe.$build,
-                Strophe.$iq ,
-                Strophe.$msg,
-                Strophe.$pres
-            );
-            return Strophe;
-        });
-    } else {
-        // Browser globals
-        factory(
-            root.Strophe,
-            root.$build,
-            root.$iq ,
-            root.$msg,
-            root.$pres
-        );
-    }
-}(this, function (Strophe, $build, $iq, $msg, $pres) {
+import { $build, $iq, Strophe } from 'strophe.js';
 
 /** Function: Strophe.Builder.form
  *  Add an options form child element.
@@ -611,4 +586,3 @@ Extend connection object to have plugin name 'pubsub'.
     },
 
 });
-}));
