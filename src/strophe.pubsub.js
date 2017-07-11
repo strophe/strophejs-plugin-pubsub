@@ -1,12 +1,3 @@
-/*
-    This program is distributed under the terms of the MIT license.
-    Please see the LICENSE file for details.
-
-    Copyright 2008, Stanziq  Inc.
-
-    Overhauled in October 2009 by Liam Breck [How does this affect copyright?]
-*/
-
 /** File: strophe.pubsub.js
  *  A Strophe plugin for XMPP Publish-Subscribe.
  *
